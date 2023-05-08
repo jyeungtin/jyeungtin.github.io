@@ -202,7 +202,11 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ['_pages']
+include: #['_pages']
+  - about.md
+  - cv.md
+  - repositories.md
+  - publications.md
 exclude:
   - bin
   - Gemfile
