@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliate Member at Leiden University Centre for Digital Humanities (LUCDH)</a>. 
+subtitle: <a href='#'>Affiliate Member at Leiden University Centre for Digital Humanities (LUCDH) </a>. 
 
 profile:
   align: right
