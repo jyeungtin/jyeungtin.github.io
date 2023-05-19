@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='#'>Affiliate Member at Leiden University Centre for Digital Humanities (LUCDH)</a>. 
 
 profile:
   align: right
@@ -17,7 +17,7 @@ social: true  # includes social icons at the bottom of the page
 
 I am Justin Yeung, a current BSc Communication Science student at the University of Amsterdam and upcoming MSc Social Data Science Student at the Oxford Internet Institute, University of Oxford. My research interests span across political communication, digital humanities and computational social sciences.
 
-I am the podcast host of [Voyage of Digitality](https://podcasts.apple.com/us/podcast/the-voyage-of-digitality-and-internet/id1648982414)
+I am the podcast host of [Voyage of Digitality](https://podcasts.apple.com/us/podcast/the-voyage-of-digitality-and-internet/id1648982414).
 
 Besides research and academic studies, I am a guitarist, a Muay Thai hobbyist and a cat dad. 
 
