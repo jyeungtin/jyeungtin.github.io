@@ -29,7 +29,7 @@
     - title: MSc in Social Data Science
       institution: University of Oxford, the U.K.
       year: upcoming
-      description:
+      #description:
         #- Description 1.
         #- Description 2.
         #- title: Description 3.
@@ -39,12 +39,10 @@
     - title: BSc Minor in Digital Humanities
       institution: Leiden University, the Netherlands
       year: 2022 - 2023
-      description:
 
     - title: BSc in Communication Science (Hons)
       institution: The University of Amsterdam, the Netherlands
       year: 2020 - 2023
-      description:
 
 - title: Experience
   type: time_table
@@ -52,7 +50,7 @@
     - title: Research Assistant
       institution: Leiden University Centre for Digital Humanities
       year: Upcoming
-      description:
+      #description:
         - Description 1.
         - Description 2.
        # - title: Description 3.
@@ -89,16 +87,16 @@
       - To explore the prospects and pitfalls of the implementation of generative AI for early-stage research for investigative journalism. 
       - To demonstrate the relations between generative AI and investigative journalists.  
 
-'''
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-'''
+
+#- title: Honors and Awards
+ # type: time_table
+  #contents:
+   # - year: 1921
+    #  items: 
+     #   - Nobel Prize in Physics 
+      #  - Matteucci Medal
+   # - year: 2029
+    #  items: 
+     #   - Max Planck Medal
+
 
