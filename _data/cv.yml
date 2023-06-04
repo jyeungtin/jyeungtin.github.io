@@ -47,8 +47,8 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Research Assistant
-      institution: Leiden University Centre for Digital Humanities
+    - title: Affiliate Researcher
+      institution: Leiden University Centre for Digital Humanities / Leiden Humanities AI and NLP group
       year: Upcoming
       #description:
         #- Description 1.
@@ -80,7 +80,7 @@
 - title: Projects
   type: time_table
   contents:
-    - title: An multidisciplinary inquiry towards generative AI for investigative journalism
+    - title: An interdisciplinary inquiry towards generative AI for investigative journalism
       year: 2023 - Present
       description: 
       - To develop a practical generative AI-based tool for investigative journalism. 
