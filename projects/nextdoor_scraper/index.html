@@ -10,10 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>news | Justin W.N. Yeung</title>
+    <title>Nextdoor Scraper | Justin W.N. Yeung</title>
     <meta name="author" content="Justin W.N. Yeung">
-    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-">
+    <meta name="description" content="A simple and plug-and-play scraper for Nextdoor">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -39,7 +38,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://jyeungtin.github.io/news/">
+    <link rel="canonical" href="https://jyeungtin.github.io/projects/nextdoor_scraper/">
 
     <!-- Dark Mode -->
     
@@ -120,38 +119,130 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">news</h1>
-            <p class="post-description"></p>
+            <h1 class="post-title">Nextdoor Scraper</h1>
+            <p class="post-description">A simple and plug-and-play scraper for Nextdoor</p>
           </header>
 
           <article>
-                      <div class="news">
-            <div class="table-responsive">
-              <table class="table table-sm table-borderless">
-              
-                <tr>
-                  <th scope="row">Jan 15, 2016</th>
-                  <td>
-                    A simple inline announcement with Markdown emoji! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">
+            <p><img src="/assets/img/image.png" style="width:100%;"></p>
 
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Nov 7, 2015</th>
-                  <td>
-                    <a class="news-title" href="/news/announcement_2/">A long announcement with details</a>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Oct 22, 2015</th>
-                  <td>
-                    A simple inline announcement.
+<h2 id="tldr">TL;DR</h2>
+<p>Nextdoor Scraper is a scraper in development for the hyperlocal social media - Nextdoor.</p>
 
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </div>
+<h2 id="major-features">Major features</h2>
+<p>The collection of the following items can be automated:</p>
+
+<ul>
+  <li>Reactions counts</li>
+  <li>Expand comments (multilevel)</li>
+  <li>Comments count and comment text</li>
+  <li>Body texts</li>
+  <li>Post and comment ID</li>
+  <li>Formatted date</li>
+  <li>Scrolling by date (with exceptions, see to-dos)</li>
+  <li>Get post user_name and comment user_name</li>
+  <li>Get neighbourhood data of posts’ and comments’ authors</li>
+</ul>
+
+<h2 id="selenium-based-scraper">Selenium-based scraper</h2>
+<p>Unlike BeautifulSoup, Selenium is not originally built for web scraping. However, Selenium has an amazing infrastructure for us to interact with dynamic elements on a web page.</p>
+
+<p>Selenium offers a range of useful wrappers for us to run our scraper on a test browser (i.e., webdriver).</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#install necessary dependencies
+</span><span class="kn">from</span> <span class="n">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span> 
+<span class="kn">from</span> <span class="n">selenium.webdriver.chrome.service</span> <span class="kn">import</span> <span class="n">Service</span>
+<span class="kn">from</span> <span class="n">webdriver_manager.chrome</span> <span class="kn">import</span> <span class="n">ChromeDriverManager</span> <span class="c1">#required by the latest version of selenium
+</span><span class="kn">from</span> <span class="n">selenium.webdriver.common.by</span> <span class="kn">import</span> <span class="n">By</span>
+<span class="kn">from</span> <span class="n">selenium.webdriver.common.keys</span> <span class="kn">import</span> <span class="n">Keys</span>
+<span class="kn">from</span> <span class="n">selenium.common.exceptions</span> <span class="kn">import</span> <span class="n">NoSuchElementException</span>
+<span class="kn">from</span> <span class="n">selenium.webdriver.support.ui</span> <span class="kn">import</span> <span class="n">WebDriverWait</span>
+<span class="kn">from</span> <span class="n">selenium.webdriver.support</span> <span class="kn">import</span> <span class="n">expected_conditions</span> <span class="k">as</span> <span class="n">EC</span>
+</code></pre></div></div>
+
+<p>Before running our scripts, we need to assign a driver and then access the webpage through the <code class="language-plaintext highlighter-rouge">driver.get</code> function.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="p">.</span><span class="nc">Chrome</span><span class="p">(</span><span class="n">service</span><span class="o">=</span><span class="nc">Service</span><span class="p">(</span><span class="nc">ChromeDriverManager</span><span class="p">().</span><span class="nf">install</span><span class="p">()))</span> <span class="c1">#install webdriver
+</span>
+<span class="n">driver</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">"</span><span class="s">https://nextdoor.nl/news_feed/</span><span class="sh">"</span><span class="p">)</span> <span class="c1">#open nextdoor on chrome driver
+</span></code></pre></div></div>
+
+<p>After setting up the driver, we can run our script (see <a href="https://github.com/jyeungtin/NextDoorScraping/tree/main/NDscraper" rel="external nofollow noopener" target="_blank">Github</a>).</p>
+
+<h2 id="sample-dataset">Sample dataset</h2>
+<p>The data (.csv) that you get from the scraper will look the following table. Mind that posts with 0 comment will still be recorded, but those cells regarding comments will be null.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>ID</strong></th>
+      <th><strong>Text</strong></th>
+      <th><strong>Comment Count</strong></th>
+      <th><strong>Post Author</strong></th>
+      <th><strong>Neighbourhood</strong></th>
+      <th><strong>Date</strong></th>
+      <th><strong>Reaction Count</strong></th>
+      <th><strong>Comment</strong></th>
+      <th><strong>Comment Author</strong></th>
+      <th><strong>Comment Author Neighbourhood</strong></th>
+      <th><strong>Comment ID</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>s_00000000000001</td>
+      <td>Hello neighbours!</td>
+      <td>1</td>
+      <td>Carol Katie</td>
+      <td>Millie Valley</td>
+      <td>15/02/2021</td>
+      <td>5</td>
+      <td>Welcome!</td>
+      <td>Oliver Anderson</td>
+      <td>Millie Valley</td>
+      <td>comment_00000000000001</td>
+    </tr>
+    <tr>
+      <td>s_00000000000002</td>
+      <td>I have lost my cat.</td>
+      <td>51</td>
+      <td>Anne B. Richardson</td>
+      <td>Bridgerton Falls</td>
+      <td>15/02/2021</td>
+      <td>12</td>
+      <td>I think I have seen a black cat around the corner of the cafe!</td>
+      <td>B. Vazquez</td>
+      <td>Millie Valley</td>
+      <td>comment_00000000000002</td>
+    </tr>
+    <tr>
+      <td>…</td>
+      <td>…</td>
+      <td>…</td>
+      <td>…</td>
+      <td>…</td>
+      <td>…</td>
+      <td>…</td>
+      <td>…</td>
+      <td>…</td>
+      <td>…</td>
+      <td>…</td>
+    </tr>
+    <tr>
+      <td>s_99999999999999</td>
+      <td>New restaurant!</td>
+      <td>0</td>
+      <td>Evan Allan</td>
+      <td>Wallux Creek</td>
+      <td>09/01/2020</td>
+      <td>0</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
           </article>
 
