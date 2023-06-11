@@ -2,7 +2,7 @@
 layout: page
 title: Multilingual text analysis of Chinese state media on the Russo-Ukrainian War
 description: Comparing traditional China Daily and Global Times
-img: /assets/img/sentiment_chart.png/
+img: [/assets/img/sentiment_chart.png/](https://github.com/jyeungtin/jyeungtin.github.io/blob/master/assets/img/sentiment_chart.png?raw=true)
 importance: 1
 category: Study
 ---
