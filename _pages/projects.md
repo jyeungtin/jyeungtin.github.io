@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
+title: projects & resources
 permalink: /projects/
-description: A growing collection of your cool projects.
-nav: false
-nav_order: 2
-display_categories: [work, fun]
+description: Find my on-going and previous projects
+nav: true
+nav_order: 5
+display_categories: [Study, Scraper]
 horizontal: false
 ---
 
