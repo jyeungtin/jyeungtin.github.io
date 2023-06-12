@@ -7,7 +7,7 @@ importance: 1
 category: Study
 ---
 
-<img src = "/assets/img/sentiment_chart.png/" style="width:100%;">
+<img src = "https://raw.githubusercontent.com/jyeungtin/jyeungtin.github.io/master/assets/img/sentiment_chart.png" style="width:100%;">
 
 
 ## Project summary
@@ -40,7 +40,7 @@ Per the results of named entities recognition, Global Times and China Daily ment
 
 ### Sentiment analysis
 
-<img src = "/assets/img/sentiment_chart.png/" height="100%" width="100%">
+<img src = "https://raw.githubusercontent.com/jyeungtin/jyeungtin.github.io/master/assets/img/sentiment_chart.png" style="width:100%;">
 
 No significant difference in rolling average sentiment scores was found between Global Times and China Daily using a confidence level of 95%. Both outlets fluctuate in a rather similar patterns with sentiment scores floating around neutral to very slightly positive or negative. 
 
