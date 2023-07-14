@@ -47,9 +47,9 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Affiliate Researcher
+    - title: Staff Researcher
       institution: Leiden University Centre for Digital Humanities / Leiden Humanities AI and NLP group
-      year: Upcoming
+      year: Present
       #description:
         #- Description 1.
         #- Description 2.
@@ -57,9 +57,9 @@
         #  contents:
          #   - Sub-description 1.
           #  - Sub-description 2.
-    - title: Visiting Researcher
+    - title: Visiting Research Intern
       institution: Max Planck Institute for Human Development (MPIB)
-      year: Upcoming
+      year: Present
       #description:
        # - Description 1.
         #- Description 2.
@@ -70,23 +70,12 @@
 
     - title: Research Assistant
       institution: Amsterdam School of Communication Research
-      year: 2022- Present
+      year: 2022- 2023
       description:
 
     - title: Research Assistant
       institution: Institute of Political Science, Leiden University
-      year: 2021 - Present
-
-- title: Projects
-  type: time_table
-  contents:
-    - title: An interdisciplinary inquiry towards generative AI for investigative journalism
-      year: 2023 - Present
-      description: 
-      - To develop a practical generative AI-based tool for investigative journalism. 
-      - To explore the prospects and pitfalls of the implementation of generative AI for early-stage research for investigative journalism. 
-      - To demonstrate the relations between generative AI and investigative journalists.  
-
+      year: 2021 - 2023
 
 #- title: Honors and Awards
  # type: time_table
