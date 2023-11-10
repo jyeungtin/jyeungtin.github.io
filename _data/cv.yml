@@ -3,7 +3,7 @@
   contents:
     - title: Computational Social Science
       items: 
-        - Network theory and network analysis
+        - Graph theory and network analysis
         - Machine Learning
     - title: Communication Science
       items:
@@ -28,7 +28,7 @@
   contents:
     - title: MSc in Social Data Science
       institution: University of Oxford, the U.K.
-      year: upcoming
+      year: 2023 - 
       #description:
         #- Description 1.
         #- Description 2.

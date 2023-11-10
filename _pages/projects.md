@@ -5,7 +5,7 @@ permalink: /projects/
 description: Find my on-going and previous projects
 nav: true
 nav_order: 5
-display_categories: [Study, Scraper]
+display_categories: [Scraper, Conference, Study]
 horizontal: false
 ---
 

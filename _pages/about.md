@@ -17,9 +17,9 @@ social: true  # includes social icons at the bottom of the page
 
 Hi there, my name is Justin Yeung! 
 
-🎓 I graduated BSc Communication Science from the University of Amsterdam and I am an upcoming MSc Social Data Science student at the Oxford Internet Institute, University of Oxford. 
+🎓 I graduated BSc Communication Science from the University of Amsterdam and I am currently a MSc Social Data Science student at the Oxford Internet Institute, University of Oxford. 
 
-🔬 My research interest mainly lies within (the subdomains of) computational social science with an infusion of digital humanities and migration studies.
+🔬 My research interest mainly lies within (the subdomains of) network science, digital humanities and communication science.
 
 🎙️ I am the podcast host of [Voyage of Digitality](https://podcasts.apple.com/us/podcast/the-voyage-of-digitality-and-internet/id1648982414).
 

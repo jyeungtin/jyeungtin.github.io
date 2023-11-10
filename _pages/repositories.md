@@ -10,7 +10,9 @@ nav: true
 nav_order: 4
 ---
 ## Too many private repos
-I am very eager to share with you my codes developed for the projects I have been working on. Unfortunately, some codes are not yet to be publicised due to fact that our project is still in progress. 
+I am very eager to share with you my codes developed for the projects I have been working on. Unfortunately, some codes are not yet to be publicised due to fact that our project is still in progress.
+
+For conference presentations and other project output, you can find these resources in [projects & resources](/projects).
 
 Please stay tuned!
 
