@@ -9,7 +9,7 @@ profile:
   image: pfp.jpg
   image_circular: false # crops the image to make it circular
 
-news: false  # includes a list of news items
+news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
@@ -24,5 +24,6 @@ Hi there, my name is Justin Yeung!
 🎙️ I am the podcast host of [Voyage of Digitality](https://podcasts.apple.com/us/podcast/the-voyage-of-digitality-and-internet/id1648982414).
 
 🥊🎸🐱 Besides research and academic studies, I am a guitarist, a Muay Thai hobbyist and a cat dad. 
+
 
 
