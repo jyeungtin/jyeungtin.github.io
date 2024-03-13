@@ -15,6 +15,11 @@ My thesis highlights this specific subfield of network science, generally called
 
 My thesis is conducted under the Oxford Internet Institute and supervised by Prof. Renaud Lambiotte at the Oxford Mathematics Institute. 
 
-## Current progress
+## Current progress 
 
-I am currently replicating a few studies to familiarize myself with percolation theory (a prominent graph robustness testing technique). 
+### Structural changes of covert networks
+
+Existing literature on the growth of individual terrorist networks have uncovered important features of the evolutions of these covert organizations. According McMillan et al. (2020), terrorist networks tend to engage in two (conventional) network growth mechanism, namely preferential attachment and triadic formation. Interestingly, to balance both security and efficiency of communication within the network, terrorists organization tend *not* to create redundant paths in the network (i.e., transitivity), as well as to avoid concentration on a given person (i.e., preferential attachment). However, this preference changes prior the attack taking place. Thus, we can understand that this growing mechanism as a time-variant extension of BA-HK where the probability of preferential attachment and triadic formation is dependent on the time before the attack. The expectation of this time-variant pertubation model is that, although preferential attachment and triadic formation are still driving the growth of the model, the probability grow, perhaps linearly, with time elapsed from time point. 
+
+Using three empirical networks, I mapped out how degree centralization and transitivity (as measured by average clustering coefficient) over time.
+
