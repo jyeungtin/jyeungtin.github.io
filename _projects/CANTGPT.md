@@ -8,7 +8,7 @@ category: Study
 ---
 
 ## Project summary
-Migration, trade and terrorism networks are centre to research efforts in the past decades and each of them have received a considerable amount of attention in their specific domains. However, little work has been done to understand the dynamics between these networks, particularly how temporal growth of one network may induce shocks in another. In this work, we examine how we can leverage techniques in multiplex, temporal networks to disentangle global trends of migration, trade and terrorism from 1990 to 2020. 
+Auditing ChatGPT stereotypes and biases...but in Cantonese!
 
 ### Supervisor 
 
