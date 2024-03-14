@@ -2,6 +2,7 @@
 layout: page
 title: Covert network robustness
 description: MSc thesis project
+img: https://www.tandfonline.com/cms/asset/96c455be-4d5e-47c6-b371-fed5c2bd9aa9/ftpv_a_1586675_f0002_oc.jpg
 importance: 1
 category: Study
 ---
@@ -14,6 +15,10 @@ My thesis highlights this specific subfield of network science, generally called
 ### Supervisor 
 
 My thesis is conducted under the Oxford Internet Institute and supervised by Prof. Renaud Lambiotte at the Oxford Mathematics Institute. 
+
+### Software
+
+Python, NetworkX, Teneto, Numpy
 
 ## Current progress 
 
