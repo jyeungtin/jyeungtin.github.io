@@ -4,7 +4,7 @@ title: migration-trade-terrorism network analysis
 description: A temporal, multiplex network analysis
 img: https://news.bbcimg.co.uk/media/images/83295000/gif/_83295879_big_arrows_world_map_labels2.gif
 importance: 1
-category: Study
+category: Conference
 ---
 
 ## Project summary
@@ -22,7 +22,7 @@ Python, Teneto, NetworkX
 
 You can find the project page on [GitHub](https://github.com/jyeungtin/ParallelNetworkChange).
 
-This project may be moved to conference, if accepted :)
+We are accepted at the [Networks and Time II Conference](https://monmeetings.org/time_net2/) in London! 
 
 ### Implementation distance metrics
 
