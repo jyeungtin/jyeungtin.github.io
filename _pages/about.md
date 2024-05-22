@@ -17,7 +17,7 @@ social: true  # includes social icons at the bottom of the page
 
 Hi there, my name is Justin Yeung! 
 
-🎓 I graduated BSc Communication Science from the University of Amsterdam and I am currently a MSc Social Data Science student at the Oxford Internet Institute, University of Oxford. 
+🎓 I graduated BSc Communication Science from the University of Amsterdam and I am currently a MSc Social Data Science student at the Oxford Internet Institute, University of Oxford. I am currently working on graph robustness of criminal networks, supervised by [Prof. Renaud Lambiotte](https://scholar.google.com/citations?user=lftXi28AAAAJ&hl=en).
 
 🔬 My research interest mainly lies within (the subdomains of) network science, digital humanities and communication science.
 
